@@ -6,6 +6,8 @@ body {
     padding: 0;
     padding: 20px;
     background-color: #F3DFA2;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 header {
@@ -42,15 +44,17 @@ ul {
 }
 
 li {
-    background-color: #eee;
+    background-color: #EFD381;
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
+    color: #346B6F;
 }
 
 .project {
     background-color: #fff;
     padding: 10px;
+    padding-bottom: 150px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     margin: 10px;
@@ -64,13 +68,12 @@ li {
     display: flex;
     justify-content: center; 
     align-items: flex-start;
-    
 }
 
 .column-item{
     margin-top: 0;
     text-align: center;
-    margin: 0 200px;
+    margin: 0 100px;
 }
 
 .column-container-projects {
@@ -99,7 +102,7 @@ li {
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
-    color: #7EBDC2;
+    color: #346B6F;
   }
 
   .my-info{
