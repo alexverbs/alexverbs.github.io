@@ -46,9 +46,11 @@ header h1 {
 }
 
 .line img {
-  display: block; 
-  margin: 0 auto; 
-  max-width: 90%;
+  width: 300px;
+  height: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar {
@@ -151,6 +153,12 @@ li {
   justify-content: center;
 }
 
+.contact-icons img{
+  display: flex;
+  width: 50px;
+}
+
+
 .text-container{
   font-size: 2.5vw;
   color: #003459;
@@ -158,6 +166,8 @@ li {
   justify-content: center;
   width: 80%;
 }
+
+
 
 @media (min-width: 1024px) {
   header {
@@ -181,6 +191,7 @@ li {
 
   .line img {
       margin-left: 50px;
+      margin-right: 0;
   }
 
   .column-container {
@@ -200,6 +211,8 @@ li {
   .skills-header h2, .project-title h2 {
       font-size: 80px;
   }
+
+ 
 
 
 }
