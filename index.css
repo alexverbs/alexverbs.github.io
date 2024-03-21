@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 5vw;
-  background-color: #F3DFA2;
+  background-color: #F1F2F6;
 }
 
 header {
@@ -18,12 +18,12 @@ header {
 
 header h1 {
   font-size: 8vw;
-  color: #BB4430;
+  color: #003459;
   margin: 0;
 }
 
 .face {
-  width: 90%;
+  width: 50%;
   margin: 20px auto;
   /*background-color: #BB4430;*/
   border-radius: 50%;
@@ -42,7 +42,7 @@ header h1 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  padding-top: 20px; 
+  padding-top: 20px;
 }
 
 .line img {
@@ -51,6 +51,16 @@ header h1 {
   max-width: 90%;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #7EBDC2;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
 
 
 section {
@@ -67,7 +77,6 @@ ul {
 }
 
 li {
-  background-color: #EFD381;
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
@@ -75,7 +84,7 @@ li {
 }
 
 .project {
-  background-color: #EFD381;
+  background-color: #D6EEFF;
   padding: 10px;
   padding-bottom: 20px;
   border-radius: 5px;
@@ -85,7 +94,6 @@ li {
 }
 
 .project h3 {
-  color: #EAC75D;
   color: #346B6F;
 }
 
@@ -134,12 +142,21 @@ li {
 }
 
 .my-info {
-  font-size: 40px;
   width: 100%;
   margin-bottom: 50px;
   margin-top: 100px;
   text-align: center;
-  color: #346B6F;
+  color: #003459;
+  display: flex;
+  justify-content: center;
+}
+
+.text-container{
+  font-size: 2.5vw;
+  color: #003459;
+  display: flex;
+  justify-content: center;
+  width: 80%;
 }
 
 @media (min-width: 1024px) {
@@ -154,7 +171,7 @@ li {
   }
 
   .header-title h1 {
-      font-size: 70px;
+      font-size: 100px;
   }
 
   .contact-info {
@@ -178,6 +195,10 @@ li {
   .column-container-projects {
       flex-direction: row;
       justify-content: space-around;
+  }
+
+  .skills-header h2, .project-title h2 {
+      font-size: 80px;
   }
 
 
