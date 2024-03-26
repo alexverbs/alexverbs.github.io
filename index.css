@@ -128,10 +128,20 @@ li {
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   margin: 10px;
   color: #346B6F;
+  transition: background-color 0.3s;
+  width: 100%;
+  height: 400px;
+  
 }
 
 .project h3 {
   color: #346B6F;
+}
+
+.project:hover {
+  background-color: #7EBDC2;
+  color: #FFF;
+  cursor: pointer;
 }
 
 .column-container {
