@@ -138,6 +138,10 @@ li {
   color: #346B6F;
 }
 
+.project p {
+  margin-bottom: 10px;
+}
+
 .project:hover {
   background-color: #7EBDC2;
   color: #FFF;
@@ -211,6 +215,25 @@ li {
   justify-content: center;
   width: 80%;
 }
+
+.project img{
+  width: 100%;
+  height: auto;
+  object-position: center;
+  object-fit: contain;
+  margin-top: 0;
+  display: block;
+  opacity: 1;
+  background: transparent;
+
+}
+
+.project img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  background: #EBEFF7;
+}
+
 
 
 
