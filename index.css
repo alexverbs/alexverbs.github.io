@@ -129,8 +129,7 @@ li {
   margin: 10px;
   color: #346B6F;
   width: 100%;
-  height: 400px;
-  opacity: 0.9;
+  height: 100%;
 }
 
 .project h3 {
@@ -140,7 +139,7 @@ li {
 .project p {
   margin-bottom: 10px;
 }
-
+/*
 .project:hover, .project:hover img, .project:hover h3, .project:hover p {
   background-color: #7EBDC2;
   color: white;
@@ -148,7 +147,7 @@ li {
   background: #346B6F;
   opacity: 1;
 }
-
+*/
 .column-container {
   display: flex;
   justify-content: center;
@@ -230,9 +229,39 @@ li {
 }
 
 
+.project-button {
+  margin-top: 10px;
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
 
+.project-button:hover {
+  background: #4D4CF0;
+  box-shadow: #4D4CF0 0 10px 20px -10px;
+}
 
-
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
 
 
 
