@@ -211,7 +211,9 @@ li {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  
 }
+
 
 .project {
   background-color: #fff;
