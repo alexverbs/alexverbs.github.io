@@ -72,6 +72,27 @@ body {
     background-color: lime; /* Green background on hover */
     color: black; /* Black text on hover */
   }
+
+  .skip-button {
+    font-family: "Courier New", Courier, monospace;
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 20px; /* Position 20px from the bottom */
+    right: 20px; /* Position 20px from the right */
+    padding: 8px 12px; /* Button size */
+    font-size: 0.7rem; /* Text size */
+    background-color: black; /* Black background */
+    color: lime; /* Green text */
+    border: 1.5px solid lime; /* Green border */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth hover transition */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .skip-button:hover {
+    background-color: lime; /* Green background on hover */
+    color: black; /* Black text on hover */
+  }
   
   /* Blinking Effect */
   @keyframes blink {

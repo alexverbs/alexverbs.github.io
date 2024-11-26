@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const typingElement = document.querySelector(".typing");
   const typingBioElement = document.querySelector(".typing-bio");
   const terminalElement = document.querySelector(".terminal");
+  let typingActive = true;
 
   let indexTitle = 0;
   let lineIndex = 0; // Declare lineIndex here
@@ -78,6 +79,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   };
 
+  const createSkipButton = () => {
+    const skipButton = document.createElement("button");
+    skipButton.classList.add("skip-button");
+    skipButton.textContent = "Skip";
+    skipButton.onclick = () => {
+      typingActive = false; // Stop the typing effect
+      showButton(); // Display the "Enter Portfolio" button
+    };
+    document.body.appendChild(skipButton);
+  };
+
   // Start typing the title after 2 seconds
   setTimeout(typeTitle, 2000);
+
+  setTimeout(createSkipButton, 4000);
 });
