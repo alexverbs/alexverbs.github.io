@@ -82,3 +82,35 @@ body {
       opacity: 0;
     }
   }
+
+  @media (max-width: 768px) {
+    .typing {
+      font-size: 3rem; 
+    }
+  
+    .typing-bio {
+      font-size: 1.6rem;
+    }
+  
+    .enter-button {
+      font-size: 1.2rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .typing {
+      font-size: 2rem;
+      line-height: 1.1; 
+    }
+  
+    .typing-bio {
+      font-size: 1.4rem; 
+      line-height: 1.4;
+    }
+  
+    .enter-button {
+      font-size: 1rem; 
+      padding: 6px 12px; 
+    }
+  }
