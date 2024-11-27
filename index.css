@@ -1,9 +1,14 @@
+
+
+:root {
+  --textColor: lime;
+}
 /* Basic Reset */
 body {
     margin: 0;
     padding: 0;
     background: black; /* Terminal-style background */
-    color: lime; /* Terminal-style text color */
+    color: var(--textColor); /* Terminal-style text color */
     font-family: "Courier New", Courier, monospace; /* Terminal-style font */
     height: 100vh; /* Full viewport height */
   }
@@ -40,7 +45,7 @@ body {
     height: 1.2em;
     margin-left: 5px;
     animation: blink 0.8s steps(2, start) infinite;
-    background-color: lime;
+    background-color: var(--textColor);
   }
   
   .cursor-bio {
@@ -49,7 +54,7 @@ body {
     height: 1.2em;
     margin-left: 5px;
     animation: blink 0.8s steps(2, start) infinite;
-    background-color: lime;
+    background-color: var(--textColor);
   }
 
   .enter-button {
@@ -59,9 +64,9 @@ body {
     margin: 0 auto; /* Center horizontally */
     padding: 10px 20px; /* Button size */
     font-size: 1.5rem; /* Text size */
-    color: lime; /* Green text */
+    color: var(--textColor); /* Green text */
     background-color: black; /* Black background */
-    border: 2px solid lime; /* Green border */
+    border: 2px solid var(--textColor); /* Green border */
     cursor: pointer; /* Pointer cursor on hover */
     text-align: center;
     transition: all 0.3s ease; /* Smooth hover transition */
@@ -69,7 +74,7 @@ body {
   }
   
   .enter-button:hover {
-    background-color: lime; /* Green background on hover */
+    background-color: var(--textColor); /* Green background on hover */
     color: black; /* Black text on hover */
   }
 
@@ -81,8 +86,8 @@ body {
     padding: 8px 12px; /* Button size */
     font-size: 0.7rem; /* Text size */
     background-color: black; /* Black background */
-    color: lime; /* Green text */
-    border: 1.5px solid lime; /* Green border */
+    color: var(--textColor); /* Green text */
+    border: 1.5px solid var(--textColor); /* Green border */
     cursor: pointer; /* Pointer cursor on hover */
     text-align: center;
     transition: all 0.3s ease; /* Smooth hover transition */
@@ -90,7 +95,7 @@ body {
   }
   
   .skip-button:hover {
-    background-color: lime; /* Green background on hover */
+    background-color: var(--textColor); /* Green background on hover */
     color: black; /* Black text on hover */
   }
   
@@ -121,17 +126,27 @@ body {
   
   @media (max-width: 480px) {
     .typing {
-      font-size: 2rem;
+      font-size: 1.5rem;
       line-height: 1.1; 
+      margin-bottom: 30px;
+    }
+
+    .cursor{
+      width: 10px;
+    }
+
+    .cursor-bio{
+      width: 6px;
     }
   
     .typing-bio {
-      font-size: 1.4rem; 
+      font-size: 1rem; 
       line-height: 1.4;
+
     }
   
     .enter-button {
       font-size: 1rem; 
-      padding: 6px 12px; 
+      padding: 6px 12px;
     }
   }
