@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       typingElement.innerHTML =
         textTitle.slice(0, indexTitle + 1) + `<span class="cursor">|</span>`;
       indexTitle++;
-      setTimeout(typeTitle, 150);
+      setTimeout(typeTitle, 100);
     } else {
       // Remove the blinking cursor from the title
       typingElement.innerHTML = textTitle;
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
           currentLine.slice(0, charIndex + 1) +
           `<span class="cursor-bio">|</span>`;
         charIndex++;
-        setTimeout(typeBio, 75); // Adjust speed here
+        setTimeout(typeBio, 50); // Adjust speed here
       } else {
         lineIndex++;
         charIndex = 0;
