@@ -64,9 +64,9 @@ body {
     margin: 0 auto; /* Center horizontally */
     padding: 10px 20px; /* Button size */
     font-size: 1.5rem; /* Text size */
-    color: var(--textColor); /* Green text */
+    color: #5B2A86; /* Green text */
     background-color: black; /* Black background */
-    border: 2px solid var(--textColor); /* Green border */
+    border: 2px solid #5B2A86; /* Green border */
     cursor: pointer; /* Pointer cursor on hover */
     text-align: center;
     transition: all 0.3s ease; /* Smooth hover transition */
@@ -74,7 +74,7 @@ body {
   }
   
   .enter-button:hover {
-    background-color: var(--textColor); /* Green background on hover */
+    background-color: #5B2A86; /* Green background on hover */
     color: black; /* Black text on hover */
   }
 
