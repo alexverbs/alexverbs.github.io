@@ -1,152 +1,421 @@
-
-
+/* mainPage.css */
 :root {
   --textColor: white;
+  --secondaryColor: #5B2A86;
 }
-/* Basic Reset */
+
 body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  /*background-color: #F1F2F6; */
+  background-color: black;
+
+}
+
+header h1 {
+  font-size: 8vw;
+  color: #003459;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin-right: 40px;
+  margin-top: 10px;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 20px;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondaryColor);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.resume a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px; 
+  font-size: 16px; 
+  color: #FFF; 
+  text-transform: uppercase; 
+  text-decoration: none;
+}
+
+.resume:hover {
+  background-color: #6c757d; 
+  cursor: pointer; 
+}
+
+.nav-buttons a {
+  font-size: 22px;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+
+.nav-buttons {
+  margin-left: auto; /* Push this container to the far right */
+  display: flex; /* Make it flexible for horizontal alignment */
+  gap: 20px; /* Space between links if more are added */
+  align-items: center;
+  
+}
+
+.frontPage-button{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-left: 20px;
+}
+
+.frontPage-button a {
+  font-size: 22px;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+.download-icon {
+  width: 15px; 
+  height: auto; 
+  margin-left: 0px; 
+  margin-right: 15px;
+}
+
+.my-info-container{
+  display: flex;
+  margin-top: 40px;
+}
+
+.face {
+  display: inline-flex;
+  justify-content: flex-start; /* Align the image to the left */
+  align-items: center;
+  margin-left: 35px; /* Control left alignment for image */
+  padding: 0;
+  width: max-content;
+}
+
+.face img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  margin: 0;
+}
+
+.text-container {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+
+.text-container p{
+  font-size: 1.5vw;
+  color: var(--textColor);
+  line-height: 1.6;
+}
+
+.contact-info {
+  margin: 0; /* Ensure no margin is applied */
+  padding: 0; /* Ensure no padding is applied */
+  display: flex; /* Make it flexible for horizontal alignment */
+  justify-content: center; /* Center the icons */
+  gap: 10px; /* Space between icons */
+  margin-left: 35px;
+  margin-top: 10px;
+  
+}
+
+.contact-icons {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.contact-icons img {
+  display: block; /* Avoid extra inline space */
+  width: 40px; /* Uniform icon size */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0; /* Remove default margin */
+  filter: invert(100%) brightness(1000%);
+}
+
+
+section {
+  margin-bottom: 20px;
+}
+
+.skills-subheader {
+  margin-bottom: 1px;
+  font-size: 1.2em;
+  margin-left: 0%;
+
+}
+
+.terminal-theme {
+  color: var(--textColor); /* Terminal text color */
+  font-family: "Courier New", Courier, monospace; /* Monospace font */
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 35px;
+}
+
+
+.terminal-output {
+  color: var(--textColor);
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  white-space: pre-wrap; /* Preserve line breaks */
+  font-size: 1.2rem;
+  width: 60%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: small;
+}
+
+li {
+  margin: 5px;
+  padding: 2px;
+  border-radius: 5px;
+  color: var(--textColor);
+}
+
+.column-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: red;
+  margin-top: 0px;
+}
+
+.column-item {
+  text-align: center; 
+  flex: 1 0 300px; 
+  background-color: yellow;
+}
+
+.code-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px; 
+}
+
+.code-grid ul {
+  display: flex;
+  flex-direction: column; 
+  list-style: none; 
+  padding: 0; 
+  margin: 0;
+  align-items: center; 
+}
+
+.code-grid li {
+  margin: 5px 0; 
+}
+
+
+
+/* Terminal-Themed Project Section */
+.project-title h2 {
+  color: var(--textColor); /* Terminal text color */
+  font-family: "Courier New", Courier, monospace; /* Monospace font */
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 35px;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  background-color: black; /* Terminal background */
+  border: 1px solid var(--textColor); /* Terminal border color */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 255, 0, 0.2); /* Green glow effect */
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05); /* Hover zoom */
+  /*  box-shadow: 0 8px 12px rgba(0, 255, 0, 0.5); Enhanced green glow */
+  box-shadow: 0 8px 12px rgb(208, 0, 255);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.project-info {
+  padding: 15px;
+  color: var(--textColor); /* Terminal green text */
+  font-family: "Courier New", Courier, monospace;
+}
+
+.project-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.project-info p {
+  margin: 10px 0;
+  color: var(--textColor); /* Terminal green text */
+}
+
+.project-info a {
+  text-decoration: none;
+  color: var(--secondaryColor); /* Terminal green */
+  border-bottom: 1px dashed var(--secondaryColor); /* Terminal-style underline */
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.project-info a:hover {
+  color: black; /* Invert text color on hover */
+  background-color: var(--secondaryColor); /* Terminal green background */
+}
+
+.frontPage-button a:hover {
+  color: black; /* Invert text color on hover */
+  background-color: var(--secondaryColor); /* Terminal green background */
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-title, .face {
+    flex-basis: 50%;
+  }
+
+  .header-title h1 {
+    font-size: 100px;
+  }
+
+  .text-container {
+    font-size: 30px;
+  }
+
+  .contact-info {
+    justify-content: start;
+  }
+
+
+  .column-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .column-item {
+    margin: 0 20px;
+  }
+
+  .column-container-projects {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skills-header h2, .project-title h2 {
+    font-size: 80px;
+  }
+
+  .nav-buttons {
+    font-size: 30px;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .terminal-output {
+    color: var(--textColor);
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    white-space: pre-wrap; /* Preserve line breaks */
+    font-size: 0.7rem;
     margin: 0;
-    padding: 0;
-    background: black; /* Terminal-style background */
-    color: var(--textColor); /* Terminal-style text color */
-    font-family: "Courier New", Courier, monospace; /* Terminal-style font */
-    height: 100vh; /* Full viewport height */
+    width: 80%;
   }
-  
-  /* Terminal Styling */
-  .terminal {
-    position: absolute; /* Position relative to top-left of viewport */
-    padding-left: 30px;
-    text-align: left; /* Aligns text to the left */
-  }
-  
-  /* Typing Effect Text */
-  .typing {
-    font-size: 5rem; /* Larger text size */
-    line-height: 1.2; /* Adjust line height for better readability */
-    margin: 0;
-    margin-top: 2rem;
-  }
-  
-  .typing-bio {
-    font-size: 2rem; /* Adjust font size */
-    white-space: normal; /* Allow line wrapping */
-    line-height: 1.5; /* Adjust line spacing for readability */
-    margin: 0;
-    vertical-align: top;
-    padding: 0;
-    margin-top: 10px;
+  .terminal-theme {
+    color: var(--textColor); /* Terminal text color */
+    font-family: "Courier New", Courier, monospace; /* Monospace font */
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 0px;
+    text-align: left;
+    width: 100%;
   }
 
-  /* Blinking Cursor */
-  .cursor{
-    display: inline-block;
-    width: 30px;
-    height: 1.2em;
-    margin-left: 5px;
-    animation: blink 0.8s steps(2, start) infinite;
-    background-color: var(--textColor);
-  }
-  
-  .cursor-bio {
-    display: inline-block;
-    width: 12px;
-    height: 1.2em;
-    margin-left: 5px;
-    animation: blink 0.8s steps(2, start) infinite;
-    background-color: var(--textColor);
+  .project-title h2{
+    margin-left: 0;
   }
 
-  .enter-button {
-    font-family: "Courier New", Courier, monospace;
-    position: absolute;
-    display: none; /* Hidden initially */
-    margin: 0 auto; /* Center horizontally */
-    padding: 10px 20px; /* Button size */
-    font-size: 1.5rem; /* Text size */
-    color: var(--textColor); /* Green text */
-    background-color: black; /* Black background */
-    border: 2px solid var(--textColor); /* Green border */
-    cursor: pointer; /* Pointer cursor on hover */
-    text-align: center;
-    transition: all 0.3s ease; /* Smooth hover transition */
-    margin-top: 20px
-  }
-  
-  .enter-button:hover {
-    background-color: var(--textColor); /* Green background on hover */
-    color: black; /* Black text on hover */
+  .nav-buttons a {
+    font-size: 20px;
   }
 
-  .skip-button {
-    font-family: "Courier New", Courier, monospace;
-    position: fixed; /* Fixed position relative to the viewport */
-    bottom: 20px; /* Position 20px from the bottom */
-    right: 20px; /* Position 20px from the right */
-    padding: 8px 12px; /* Button size */
-    font-size: 0.7rem; /* Text size */
-    background-color: black; /* Black background */
-    color: var(--textColor); /* Green text */
-    border: 1.5px solid var(--textColor); /* Green border */
-    cursor: pointer; /* Pointer cursor on hover */
-    text-align: center;
-    transition: all 0.3s ease; /* Smooth hover transition */
-    z-index: 1000; /* Ensure it's above other elements */
+  .frontPage-button a {
+    font-size: 15px;
   }
-  
-  .skip-button:hover {
-    background-color: var(--textColor); /* Green background on hover */
-    color: black; /* Black text on hover */
-  }
-  
-  /* Blinking Effect */
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  .my-info-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
   }
 
-  @media (max-width: 768px) {
-    .typing {
-      font-size: 3rem; 
-    }
-  
-    .typing-bio {
-      font-size: 1.6rem;
-    }
-  
-    .enter-button {
-      font-size: 1.2rem;
-      padding: 8px 16px;
-    }
+  .face {
+    margin-left: 0; /* Remove left margin for better centering */
+    justify-content: center; /* Center the image */
+    width: 100%; /* Let it span the full container width */
   }
-  
-  @media (max-width: 480px) {
-    .typing {
-      font-size: 1.5rem;
-      line-height: 1.1; 
-      margin-bottom: 30px;
-    }
 
-    .cursor{
-      width: 10px;
-    }
-
-    .cursor-bio{
-      width: 6px;
-    }
-  
-    .typing-bio {
-      font-size: 1rem; 
-      line-height: 1.4;
-
-    }
-  
-    .enter-button {
-      font-size: 1rem; 
-      padding: 6px 12px;
-    }
+  .face img {
+    max-width: 300px; /* Limit the image size on smaller screens */
+    width: auto; /* Allow natural width within max constraint */
   }
+
+
+
+  .contact-info{
+    justify-content: left;
+  }
+
+  .text-container p{
+    font-size: 2.5vw;
+    color: var(--textColor);
+    line-height: 1.6;
+    margin-right: 50px;
+  }
+
+}
+

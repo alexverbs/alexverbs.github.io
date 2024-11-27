@@ -1,16 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Verbesey Portfolio</title>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://github.com/alexverbs/alexverbs.github.io/blob/d3d0848591b647211440f9e09d63ac3a4cc1483b/assets/AV-faviconNEW.ico">
+    <title>Alex Verbesey</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="terminal">
-        <h1 class="typing"></h1>
-        <p class="typing-bio"></p>
-      </div>
-  <script src="script.js"></script>
+    
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="frontPage-button">
+            <a href="frontPage.html" class="button-link">Alex Verbesey</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="mailto:abv21@georgetown.edu" target="_blank">Contact</a>
+        </div>
+        <div class="resume">
+            <a href="https://drive.google.com/file/d/1e2lnJ7Rl9gJehZ2g4rzee2kk8jqRwELy/view?usp=sharing" target="_blank">Resume</a>
+            <img class="download-icon" src="./assets/download.png" alt="Download Resume Icon">
+        </div>
+    </div>
+
+    <div id="my-info">
+        <div class="my-info-container">
+            <div class="face">
+                <img src="./assets/alex4.jpeg" alt="Alex Verbesey">
+            </div>
+            <div class="text-container">
+                <p>
+                    My name is Alex Verbesey I am a junior studying computer science at Georgetown University, 
+                    currently spending a semester abroad in Copenhagen, Denmark. I am passionate about software engineering and 
+                    eager to apply my skills to real-world challenges. Beyond coding, I enjoy running, basketball, 
+                    art, music, and chess, which inspire my creativity and problem-solving approach. I am actively 
+                    seeking software engineering internship opportunities for summer 2025.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Info Section -->
+    <div class="contact-info">
+        <div class="contact-icons">
+            <a href="mailto:abv21@georgetown.edu" target="_blank">
+                <img src="./assets/email.png" alt="Email Icon">
+            </a>
+        </div>
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/alexverbs/" target="_blank">
+                <img src="./assets/instagram.png" alt="Instagram Icon">
+            </a>
+        </div>
+        <div class="contact-icons">
+            <a href="https://github.com/alexverbs" target="_blank">
+                <img src="./assets/github.png" alt="GitHub Icon">
+            </a>
+        </div>
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/alexander-verbesey-b14548302/" target="_blank">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon">
+            </a>
+        </div>
+    </div>
+
+    <!-- Technical Skills Section -->
+    <section id="technical-skills" class="terminal-theme">
+        <div class="skills-header">
+          <h2>TECHNICAL SKILLS</h2>
+        </div>
+        <pre class="terminal-output">
+$ cat skills.txt
+
+Languages: C++, Python, Java, JavaScript, TypeScript
+
+Frameworks/Tools: Git/GitHub, Visual Studio, XCode, HTML, CSS, Bash/SSH, React JS, Jupyter Notebook, Docker, AWS Services, Firebase, TensorFlow
+
+Design: Photoshop, Illustrator, InDesign, Figma
+        </pre>
+      </section>
+
+      <section id="relevant-coursework" class="terminal-theme">
+        <div class="skills-header">
+          <h2>RELEVANT COURSEWORK</h2>
+        </div>
+        <pre class="terminal-output">
+$ cat coursework.txt
+
+Computer Science: CS1, CS2, Data Structures, Algorithms, Advanced Programming, Computational Structures, Network Security, Artificial Intelligence, Neural Networks and Deep Learning
+            
+Mathematics: Probability and Statistics, Math Methods, Calculus I, Calculus II, Linear Algebra
+            
+GPA: 3.81
+
+
+        </pre>
+      </section>
+    
+    <section id="projects">
+        <div class="project-title">
+            <h2>PROJECTS</h2>
+        </div>
+
+        <div class="project-grid">
+
+            <div class="project">
+                <img src="./assets/toDoList.png" alt="to Do List Screenshot" />
+                <div class="project-info">
+                    <h3>To Do List</h3>
+                    <p>Built a daily To-Do website with HTML, CSS, and JavaScript, integrating Firebase Cloud Firestore for seamless task storage and retrieval. Automatically generates date headers for new days and enhances productivity with a simple, user-friendly interface. Hosted on GitHub Pages and used daily as a personal productivity tool.</p>
+                    <a href="https://github.com/alexverbs/toDoList" target="_blank">View on GitHub</a>
+                    <p></p>
+                    <a href="https://alexverbesey.com/toDoList/" target="_blank">View Website</a>
+                </div>
+            </div>
+
+
+            <div class="project">
+                <img src="./assets/tomandjerry.png" alt="Tom and Jerry CNN Screenshot" />
+                <div class="project-info">
+                    <h3>Tom and Jerry Image Recognition</h3>
+                    <p>Convolutional Neural Network (CNN) built using TensorFlow Keras to classify images into four categories: Tom, Jerry, both, or neither. It is written in Python using Jupyter notebooks, and includes visual graphs to track the model's performance during training and testing.</p>
+                    <a href="https://github.com/alexverbs/ABV-CNN-TJ" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+    
+            <div class="project">
+                <img src="./assets/faceRec.png" alt="Facial Recognition Screenshot" />
+                <div class="project-info">
+                    <h3>Facial Recognition</h3>
+                    <p>Facial recognition system built in Python using the DeepFace library. It takes a reference image of my face and can identify it in a live feed with high accuracy. The software leverages advanced facial recognition techniques to perform quick and reliable matches.</p>
+                    <a href="https://github.com/alexverbs/faceRec" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="./assets/calorieTracker.png" alt="Calorie Tracker Screenshot" />
+                <div class="project-info">
+                    <h3>Calorie Tracker</h3>
+                    <p>A Calorie Tracker app built with React and the ChatGPT API that estimates calorie counts based on food entries and tracks daily intake.</p>
+                    <a href="https://github.com/alexverbs/calorie-tracker" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+    
+            <div class="project">
+                <img src="./assets/chess.png" alt="Chess Game Screenshot" />
+                <div class="project-info">
+                    <h3>Chess Board</h3>
+                    <p>Interactive chess game, built in React, lets players enjoy chess with all the official rules. It currently allows for local play on one computer and provides an engaging way to practice chess.</p>
+                    <a href="https://github.com/alexverbs/chess-project" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+    
+            <div class="project">
+                <img src="./assets/jeapordy.png" alt="Jeopardy Game Screenshot" />
+                <div class="project-info">
+                    <h3>Jeopardy</h3>
+                    <p>A React-based Jeopardy game featuring five categories, including one focused on me. It includes a working scoreboard and serves as a practical project to explore full-stack development.</p>
+                    <a href="https://github.com/alexverbs/Jeapordy-Hoya-Devs" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+    
+            <div class="project">
+                <img src="./assets/wordle.png" alt="Wordle Bot Screenshot" />
+                <div class="project-info">
+                    <h3>Wordle Bot</h3>
+                    <p>This Wordle solver has a near 100% success rate. It uses your feedback to suggest the next guess, helping you solve the puzzle quickly and accurately.</p>
+                    <a href="https://github.com/alexverbs/Wordle-Bot" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+    </section>
+    
+    <!-- testing domain -->
+
+    <!--
+    <div>
+        <a href="https://data.typeracer.com/pit/profile?user=yeetverbs&ref=badge" t
+        arget="_top"><img src="https://data.typeracer.com/misc/badge?user=yeetverbs" 
+        border="0" alt="TypeRacer.com scorecard for user yeetverbs"/></a>
+    </div>
+    -->
+    <!--
+    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" 
+    style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" 
+    sandbox="allow-forms allow-popups allow-same-origin allow-scripts 
+    allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+    src="https://embed.music.apple.com/us/album/guts-spilled/1736994915"></iframe>
+    -->
+      
 </body>
 </html>

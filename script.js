@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.classList.add("enter-button");
     button.textContent = "Enter Portfolio";
     button.onclick = () => {
-      window.location.href = "mainPage.html";
+      window.location.href = "index.html";
     };
 
     // Append the button to the terminal container below the bio
