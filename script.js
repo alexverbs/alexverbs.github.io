@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const textBioLines = [
     "I am a junior majoring in computer",
     "science at Georgetown University.",
-    "I am currently studying abroad in",
-    "Copenhagen, Denmark, and I am very",
+    "I recently returned from studying abroad",
+    "in Copenhagen, Denmark, and I am very",
     "passionate about becoming a software",
     "engineer. I am seeking summer '25",
     "internship opportunities.",

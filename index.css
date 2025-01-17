@@ -88,6 +88,12 @@ header h1 {
   text-decoration: none;
 }
 
+.frontPage-button a:hover {
+  color: black; /* Invert text color on hover */
+  background-color: var(--secondaryColor); /* Terminal green background */
+}
+
+
 .download-icon {
   width: 15px; 
   height: auto; 
@@ -298,11 +304,6 @@ li {
 }
 
 .project-info a:hover {
-  color: black; /* Invert text color on hover */
-  background-color: var(--secondaryColor); /* Terminal green background */
-}
-
-.frontPage-button a:hover {
   color: black; /* Invert text color on hover */
   background-color: var(--secondaryColor); /* Terminal green background */
 }
