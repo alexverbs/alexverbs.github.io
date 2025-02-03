@@ -6,6 +6,7 @@
 
 body {
   font-family: "Courier New", Courier, monospace;
+  /*font-family: "Helvetica", "Arial", sans-serif;*/
   margin: 0;
   padding: 0;
   /*background-color: #F1F2F6; */
@@ -205,7 +206,7 @@ header h1 {
   margin-left: 35px; /* Control left alignment for image */
   padding: 0;
   width: max-content;
-  border: 2px solid white;
+  
 
 }
 
@@ -213,6 +214,7 @@ header h1 {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   margin: 0;
+  border: 2px solid white;
 }
 
 .text-container {
