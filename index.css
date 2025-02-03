@@ -1,7 +1,7 @@
 /* mainPage.css */
 :root {
   --textColor: white;
-  --secondaryColor: #5B2A86;
+  --secondaryColor: #f43f5e;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   /*background-color: #F1F2F6; */
-  background-color: black;
+  background-color: #07192A;
 
 }
 
@@ -17,6 +17,36 @@ header h1 {
   font-size: 8vw;
   color: #003459;
   margin: 0;
+}
+
+/* Reusable Rainbow Text Effect */
+.rainbow-text {
+  background: linear-gradient(
+    238deg,
+    #0284c7 0%,   /* Sky-600 */
+    #6366f1 15%,  /* Indigo-500 */
+    #f43f5e 50%,  /* Rose-500 */
+    #6366f1 85%,  /* Indigo-500 */
+    #0284c7 100%  /* Sky-600 */
+  );
+  background-size: 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text-animation 4s ease infinite;
+}
+
+/* Rainbow Animation */
+@keyframes rainbow-text-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .navbar {
@@ -30,7 +60,7 @@ header h1 {
   font-family: "Courier New", Courier, monospace;
   margin-bottom: 20px;
 }
-
+/*
 .resume {
   display: flex;
   justify-content: center;
@@ -56,7 +86,54 @@ header h1 {
   background-color: #6c757d; 
   cursor: pointer; 
 }
+*/
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    238deg,
+    #0284c7 0%,   /* Sky-600 */
+    #6366f1 15%,  /* Indigo-500 */
+    #f43f5e 50%,  /* Rose-500 */
+    #6366f1 85%,  /* Indigo-500 */
+    #0284c7 100%  /* Sky-600 */
+  );
+  background-size: 400%;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+  animation: rainbow-bg-animation 4s ease infinite;
+}
 
+.resume a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px; 
+  font-size: 16px; 
+  color: #FFF; /* Keeps text white for contrast */
+  text-transform: uppercase; 
+  text-decoration: none;
+}
+
+.resume:hover {
+  background-color: transparent; /* Keeps the gradient on hover */
+  cursor: pointer;
+}
+
+/* Rainbow Background Animation */
+@keyframes rainbow-bg-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .nav-buttons a {
   font-size: 22px;
   color: var(--textColor);
@@ -65,13 +142,13 @@ header h1 {
 
 
 .nav-buttons {
-  margin-left: auto; /* Push this container to the far right */
-  display: flex; /* Make it flexible for horizontal alignment */
-  gap: 20px; /* Space between links if more are added */
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
   align-items: center;
   
 }
-
+/*
 .frontPage-button{
   display: flex;
   justify-content: left;
@@ -89,10 +166,25 @@ header h1 {
 }
 
 .frontPage-button a:hover {
-  color: black; /* Invert text color on hover */
-  background-color: var(--secondaryColor); /* Terminal green background */
+  color: black;
+  background-color: var(--secondaryColor);
+}
+*/
+
+.frontPage-button {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-left: 20px;
 }
 
+.frontPage-button a {
+  font-size: 22px;
+  text-decoration: none;
+}
 
 .download-icon {
   width: 15px; 
@@ -113,6 +205,8 @@ header h1 {
   margin-left: 35px; /* Control left alignment for image */
   padding: 0;
   width: max-content;
+  border: 2px solid white;
+
 }
 
 .face img {
@@ -183,12 +277,14 @@ section {
 
 .terminal-output {
   color: var(--textColor);
-  background-color: black;
+  background-color: #6366f1;
   padding: 20px;
   border-radius: 10px;
   white-space: pre-wrap; /* Preserve line breaks */
   font-size: 1.2rem;
   width: 60%;
+  border: 2px solid white;
+
 }
 
 ul {
@@ -258,7 +354,7 @@ li {
 }
 
 .project {
-  background-color: black; /* Terminal background */
+  background-color: #6366f1; /* Terminal background */
   border: 1px solid var(--textColor); /* Terminal border color */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 255, 0, 0.2); /* Green glow effect */
@@ -269,7 +365,7 @@ li {
 .project:hover {
   transform: scale(1.05); /* Hover zoom */
   /*  box-shadow: 0 8px 12px rgba(0, 255, 0, 0.5); Enhanced green glow */
-  box-shadow: 0 8px 12px rgb(208, 0, 255);
+  box-shadow: 0 8px 12px rgb(244, 63, 94);
 }
 
 .project img {
