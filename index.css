@@ -183,7 +183,7 @@ header h1 {
 }
 
 .frontPage-button a {
-  font-size: 22px;
+  font-size: 30px;
   text-decoration: none;
 }
 
@@ -279,7 +279,7 @@ section {
 
 .terminal-output {
   color: var(--textColor);
-  background-color: #6366f1;
+  background-color: #1d2e50;
   padding: 20px;
   border-radius: 10px;
   white-space: pre-wrap; /* Preserve line breaks */
@@ -356,7 +356,7 @@ li {
 }
 
 .project {
-  background-color: #6366f1; /* Terminal background */
+  background-color: #172f53; /* Terminal background */
   border: 1px solid var(--textColor); /* Terminal border color */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 255, 0, 0.2); /* Green glow effect */
