@@ -279,13 +279,13 @@ section {
 
 .terminal-output {
   color: var(--textColor);
-  background-color: #1d2e50;
+  /*background-color: #1d2e50; */
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 10px; 
   white-space: pre-wrap; /* Preserve line breaks */
   font-size: 1.2rem;
   width: 60%;
-  border: 2px solid white;
+  /*border: 2px solid white; */
 
 }
 
